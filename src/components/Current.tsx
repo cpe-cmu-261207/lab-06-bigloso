@@ -37,7 +37,7 @@ const Current = () =>{
         if(loading){
             return (
                 <div className='text-center space-y-3'>
-                <p className='text-2xl font-semibold'>Current price</p>
+                <p className='text-2xl font-serif'>Current price</p>
                 <p className='text-2xl'>Loading ...</p>
                 </div>
             )
@@ -45,7 +45,7 @@ const Current = () =>{
         else{
             return(
               <div className='text-center space-y-3'>
-                 <p className='text-2xl font-semibold'>Current price</p>
+                 <p className='text-2xl font-serif'>Current price</p>
                  <p className='text-2xl'>{(current?.bpi.THB.rate_float)?.toLocaleString()} THB</p>
                   <p> (Last updated {current?.time.updated}) </p>
               </div>  
